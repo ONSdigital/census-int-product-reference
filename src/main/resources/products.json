@@ -1,0 +1,434 @@
+[
+ {
+   "productCode": "H1",
+   "description": "Household Questionnaire for England",
+   "caseType": "H",
+   "regions": ["E"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "H2",
+   "description": "Household Questionnaire for Wales (in English)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "H2W",
+   "description": "Household Questionnaire for Wales (in Welsh)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "H4",
+   "description": "Household Questionnaire for Northern Ireland (in English)",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HC1",
+   "description": "Household Continuation for England",
+   "caseType": "H",
+   "regions": ["E"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HC2",
+   "description": "Household Continuation for Wales (in English)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HC2W",
+   "description": "Household Continuation for Wales (in Welsh)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HC4",
+   "description": "Household Continuation for Northern Ireland (in English)",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "UACHT1",
+   "description": "Household UAC for England",
+   "caseType": "H",
+   "regions": ["E"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "UACHT2",
+   "description": "Household UAC for Wales (in English)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "UACHT2W",
+   "description": "Household UAC for Wales (in Welsh)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "UACHT4",
+   "description": "Household UAC for Northern Ireland (in English)",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "HL1",
+   "description": "Household Questionnaire (Large Print) for England",
+   "caseType": "H",
+   "regions": ["E"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HL2",
+   "description": "Household Questionnaire (Large Print) for Wales (in English)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HL2W",
+   "description": "Household Questionnaire (Large Print) for Wales (in Welsh)",
+   "caseType": "H",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "HL4",
+   "description": "Household Questionnaire (Large Print) for Northern Ireland (in English)",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "I1",
+   "description": "Individual Questionnaire for England",
+   "caseType": "HI",
+   "regions": ["E"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "I2",
+   "description": "Individual Questionnaire for Wales (in English)",
+   "caseType": "HI",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "I2W",
+   "description": "Individual Questionnaire for Wales (in Welsh)",
+   "caseType": "HI",
+   "regions": ["W"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "I4",
+   "description": "Individual Questionnaire for Northern Ireland (in English)",
+   "caseType": "HI",
+   "regions": ["N"],
+   "productType": "PAPER",
+   "channels": ["CC", "FIELD"],
+   "handler": "QM"
+ },
+ {
+   "productCode": "UACIT1",
+   "description": "Individual UAC for England",
+   "caseType": "HI",
+   "regions": ["E"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD", "RH"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "UACIT2",
+   "description": "Individual UAC for Wales (in English)",
+   "caseType": "HI",
+   "regions": ["W"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD", "RH"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "UACIT2W",
+   "description": "Individual UAC for Wales (in Welsh)",
+   "caseType": "HI",
+   "regions": ["W"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD", "RH"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "UACIT4",
+   "description": "Individual UAC for Northern Ireland (in English)",
+   "caseType": "HI",
+   "regions": ["W"],
+   "productType": "SMS",
+   "channels": ["CC", "FIELD", "RH"],
+   "handler": "NOTIFY"
+ },
+ {
+   "productCode": "TBARA1",
+   "description": "Translation Booklet for England & Wales - Arabic",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBBEN1",
+   "description": "Translation Booklet for England & Wales - Bengali",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBCAN1",
+   "description": "Translation Booklet for England & Wales - Cantonese",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBCAN4",
+   "description": "Translation Booklet for Northern Ireland - Cantonese",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBFRE1",
+   "description": "Translation Booklet for England & Wales - French",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBGUJ1",
+   "description": "Translation Booklet for England & Wales - Gujarati",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBGUR1",
+   "description": "Translation Booklet for England & Wales - Panjabi - Gurmukhi",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBIRI4",
+   "description": "Translation Booklet for Northern Ireland - Irish",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBITA1",
+   "description": "Translation Booklet for England & Wales - Italian",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBKUR1",
+   "description": "Translation Booklet for England & Wales - Kurdish",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBLIT1",
+   "description": "Translation Booklet for England & Wales - Lithuanian",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBLIT4",
+   "description": "Translation Booklet for Northern Ireland - Lithuanian",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBMAN1",
+   "description": "Translation Booklet for England & Wales - Mandarin Chinese",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBMAN4",
+   "description": "Translation Booklet for Northern Ireland - Mandarin Chinese",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBPOL1",
+   "description": "Translation Booklet for England & Wales - Polish",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBPOL4",
+   "description": "Translation Booklet for Northern Ireland - Polish",
+   "caseType": "H",
+   "regions": ["NIO"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBPOR1",
+   "description": "Translation Booklet for England & Wales - Portuguese",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBRUS1",
+   "description": "Translation Booklet for England & Wales - Russian",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBSOM1",
+   "description": "Translation Booklet for England & Wales - Somali",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBSPA1",
+   "description": "Translation Booklet for England & Wales - Spanish",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBTUR1",
+   "description": "Translation Booklet for England & Wales - Turkish",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBULS4",
+   "description": "Translation Booklet for Northern Ireland - Ulster Scots",
+   "caseType": "H",
+   "regions": ["N"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBVIE1",
+   "description": "Translation Booklet for England & Wales - Vietnamese",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
+   "productCode": "TBYSH1",
+   "description": "Translation Booklet for England & Wales - Yiddish",
+   "caseType": "H",
+   "regions": ["E", "W"],
+   "productType": "BOOKLET",
+   "channels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ }
+]
