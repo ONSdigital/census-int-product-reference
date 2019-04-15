@@ -5,13 +5,13 @@
 This project contains reusable service layer code to facilitate the lookup of Census product types (aka fulfilments).
 The initial release allows product lookup based on case type and region, and returns a list of product objects, encapsulating :
 
-  productCode
-  description
-  caseType
-  regions []
-  productType
-  channels []
-  handler
+*  productCode
+*  description
+*  caseType
+*  regions []
+*  productType
+*  channels []
+*  handler
 
 ## Copyright
 Copyright (C) 2019 Crown Copyright (Office for National Statistics)
