@@ -57,8 +57,8 @@ public class ProductReferenceTest {
     Product example = new Product();
     example.setRegions(Arrays.asList("W", "E"));
     assertExpectedRegion(example);
-  } 
-  
+  }
+
   @Test
   public void allPolish() throws Exception {
     Product example = new Product();
@@ -86,7 +86,6 @@ public class ProductReferenceTest {
       assertTrue(p.getRegions().containsAll(example.getRegions()));
     }
   }
-  
 
   @Test
   public void justHC4() throws Exception {
