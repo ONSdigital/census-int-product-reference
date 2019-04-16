@@ -7,9 +7,10 @@ import lombok.Data;
 public class Product {
   private String productCode;
   private String description;
+  private String language;
   private String caseType;
   private List<String> regions;
-  private String productType;
-  private List<String> channels;
+  private String deliveryChannel;
+  private List<String> requestChannels;
   private String handler;
 }

@@ -57,6 +57,20 @@ public class ProductReferenceTest {
     Product example = new Product();
     example.setRegions(Arrays.asList("W", "E"));
     assertExpectedRegion(example);
+  } 
+  
+  @Test
+  public void allPolish() throws Exception {
+    Product example = new Product();
+    example.setLanguage("pol");
+    assertOnlyExpectedLanguage(example);
+  }
+
+  private void assertOnlyExpectedLanguage(Product example) throws Exception {
+    List<Product> products = productReference.searchProducts(example);
+    for (Product p : products) {
+      assertTrue(p.getLanguage().equals(example.getLanguage()));
+    }
   }
 
   @Test
@@ -72,6 +86,7 @@ public class ProductReferenceTest {
       assertTrue(p.getRegions().containsAll(example.getRegions()));
     }
   }
+  
 
   @Test
   public void justHC4() throws Exception {
@@ -86,24 +101,24 @@ public class ProductReferenceTest {
   @Test
   public void justPaper() throws Exception {
     Product example = new Product();
-    example.setProductType("Paper");
+    example.setDeliveryChannel("Paper");
     List<Product> products = productReference.searchProducts(example);
     for (Product p : products) {
-      assertTrue(p.getProductType().equals("Paper"));
+      assertTrue(p.getDeliveryChannel().equals("Paper"));
     }
   }
 
   @Test
   public void allSMS() throws Exception {
     Product example = new Product();
-    example.setChannels(Arrays.asList("SMS"));
+    example.setRequestChannels(Arrays.asList("SMS"));
     assertExpectedChannel(example);
   }
 
   private void assertExpectedChannel(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
     for (Product p : products) {
-      assertTrue(p.getChannels().containsAll(example.getChannels()));
+      assertTrue(p.getRequestChannels().containsAll(example.getRequestChannels()));
     }
   }
 }

@@ -47,18 +47,21 @@ public class ProductReference {
                     && (example.getHandler() == null
                         ? true
                         : p.getHandler().equals(example.getHandler()))
+                    && (example.getLanguage() == null
+                        ? true
+                        : p.getLanguage().equals(example.getLanguage()))
                     && (example.getProductCode() == null
                         ? true
                         : p.getProductCode().equals(example.getProductCode()))
-                    && (example.getProductType() == null
+                    && (example.getDeliveryChannel() == null
                         ? true
-                        : p.getProductType().equals(example.getProductType()))
+                        : p.getDeliveryChannel().equals(example.getDeliveryChannel()))
                     && (example.getRegions() == null
                         ? true
                         : p.getRegions().containsAll(example.getRegions()))
-                    && (example.getChannels() == null
+                    && (example.getRequestChannels() == null
                         ? true
-                        : p.getChannels().containsAll(example.getChannels()))
+                        : p.getRequestChannels().containsAll(example.getRequestChannels()))
                     && (example.getDescription() == null
                         ? true
                         : p.getDescription().equals(example.getDescription())))
