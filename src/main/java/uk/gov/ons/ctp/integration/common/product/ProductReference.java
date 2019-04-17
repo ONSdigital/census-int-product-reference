@@ -4,9 +4,12 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.godaddy.logging.Logger;
+import com.godaddy.logging.LoggerFactory;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.core.io.Resource;
@@ -18,16 +21,20 @@ import uk.gov.ons.ctp.integration.common.product.model.Product;
 @Component
 public class ProductReference {
 
-  @Value("classpath:products.json")
+  private static final Logger log = LoggerFactory.getLogger(ProductReference.class);
+
+  @Value("classpath:/products.json")
   Resource productFile;
 
-  @Cacheable("productCache")
-  public List<Product> searchProducts(Product example) throws CTPException {
+  private List<Product> products;
+
+  @PostConstruct
+  public void initProducts() throws Exception {
     ObjectMapper objectMapper = new ObjectMapper();
-    List<Product> products = null;
     try {
       products =
-          objectMapper.readValue(productFile.getFile(), new TypeReference<List<Product>>() {});
+          objectMapper.readValue(
+              productFile.getInputStream(), new TypeReference<List<Product>>() {});
     } catch (JsonParseException e) {
       throw new CTPException(
           Fault.SYSTEM_ERROR, "Failed to parse common product reference dataset");
@@ -36,7 +43,10 @@ public class ProductReference {
     } catch (IOException e) {
       throw new CTPException(Fault.SYSTEM_ERROR, "Failed to read common product reference dataset");
     }
+  }
 
+  @Cacheable("productCache")
+  public List<Product> searchProducts(Product example) throws CTPException {
     return products
         .stream()
         .filter(
@@ -50,9 +60,9 @@ public class ProductReference {
                     && (example.getLanguage() == null
                         ? true
                         : p.getLanguage().equals(example.getLanguage()))
-                    && (example.getProductCode() == null
+                    && (example.getFulfilmentCode() == null
                         ? true
-                        : p.getProductCode().equals(example.getProductCode()))
+                        : p.getFulfilmentCode().equals(example.getFulfilmentCode()))
                     && (example.getDeliveryChannel() == null
                         ? true
                         : p.getDeliveryChannel().equals(example.getDeliveryChannel()))

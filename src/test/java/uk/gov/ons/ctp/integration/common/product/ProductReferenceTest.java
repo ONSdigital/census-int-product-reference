@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.gov.ons.ctp.integration.common.product.model.Product;
+import uk.gov.ons.ctp.integration.common.product.model.Product.CaseType;
+import uk.gov.ons.ctp.integration.common.product.model.Product.DeliveryChannel;
+import uk.gov.ons.ctp.integration.common.product.model.Product.Region;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ProductReference.class})
@@ -20,14 +23,14 @@ public class ProductReferenceTest {
   @Test
   public void onlyHousehold() throws Exception {
     Product example = new Product();
-    example.setCaseType("HH");
+    example.setCaseType(CaseType.H);
     assertOnlyExpectedCaseType(example);
   }
 
   @Test
   public void onlyIndividual() throws Exception {
     Product example = new Product();
-    example.setCaseType("IND");
+    example.setCaseType(CaseType.HI);
     assertOnlyExpectedCaseType(example);
   }
 
@@ -41,21 +44,21 @@ public class ProductReferenceTest {
   @Test
   public void allEngland() throws Exception {
     Product example = new Product();
-    example.setRegions(Arrays.asList("E"));
+    example.setRegions(Arrays.asList(Region.E));
     assertExpectedRegion(example);
   }
 
   @Test
   public void allWales() throws Exception {
     Product example = new Product();
-    example.setRegions(Arrays.asList("W"));
+    example.setRegions(Arrays.asList(Region.W));
     assertExpectedRegion(example);
   }
 
   @Test
   public void allWalesEngland() throws Exception {
     Product example = new Product();
-    example.setRegions(Arrays.asList("W", "E"));
+    example.setRegions(Arrays.asList(Region.E, Region.W));
     assertExpectedRegion(example);
   }
 
@@ -76,12 +79,13 @@ public class ProductReferenceTest {
   @Test
   public void allNIreland() throws Exception {
     Product example = new Product();
-    example.setRegions(Arrays.asList("N"));
+    example.setRegions(Arrays.asList(Region.E));
     assertExpectedRegion(example);
   }
 
   private void assertExpectedRegion(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
     for (Product p : products) {
       assertTrue(p.getRegions().containsAll(example.getRegions()));
     }
@@ -90,34 +94,32 @@ public class ProductReferenceTest {
   @Test
   public void justHC4() throws Exception {
     Product example = new Product();
-    example.setProductCode("HC4");
+    example.setFulfilmentCode("TBPOL1");
     List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
     for (Product p : products) {
-      assertTrue(p.getProductCode().equals("HC4"));
+      assertTrue(p.getFulfilmentCode().equals("TBPOL1"));
     }
   }
 
   @Test
   public void justPaper() throws Exception {
     Product example = new Product();
-    example.setDeliveryChannel("Paper");
+    example.setDeliveryChannel(DeliveryChannel.POST);
     List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
     for (Product p : products) {
-      assertTrue(p.getDeliveryChannel().equals("Paper"));
+      assertTrue(p.getDeliveryChannel().equals(DeliveryChannel.POST));
     }
   }
 
   @Test
   public void allSMS() throws Exception {
     Product example = new Product();
-    example.setRequestChannels(Arrays.asList("SMS"));
-    assertExpectedChannel(example);
-  }
-
-  private void assertExpectedChannel(Product example) throws Exception {
+    example.setDeliveryChannel(DeliveryChannel.SMS);
     List<Product> products = productReference.searchProducts(example);
     for (Product p : products) {
-      assertTrue(p.getRequestChannels().containsAll(example.getRequestChannels()));
+      assertTrue(p.getDeliveryChannel().equals(example.getDeliveryChannel()));
     }
   }
 }

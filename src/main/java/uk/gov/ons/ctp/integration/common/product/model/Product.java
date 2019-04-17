@@ -5,12 +5,43 @@ import lombok.Data;
 
 @Data
 public class Product {
-  private String productCode;
+  private String fulfilmentCode;
   private String description;
   private String language;
-  private String caseType;
-  private List<String> regions;
-  private String deliveryChannel;
-  private List<String> requestChannels;
-  private String handler;
+  private CaseType caseType;
+  private List<Region> regions;
+  private DeliveryChannel deliveryChannel;
+  private List<RequestChannel> requestChannels;
+  private Handler handler;
+
+  public enum RequestChannel {
+    CC,
+    FIELD,
+    RH
+  }
+
+  public enum DeliveryChannel {
+    POST,
+    SMS,
+    EMAIL
+  }
+
+  public enum Region {
+    E,
+    W,
+    N
+  }
+
+  public enum CaseType {
+    H,
+    HI,
+    C,
+    CI
+  }
+
+  public enum Handler {
+    QM,
+    NOTIFY,
+    PRINT
+  }
 }
