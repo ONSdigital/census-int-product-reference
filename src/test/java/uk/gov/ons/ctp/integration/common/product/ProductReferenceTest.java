@@ -92,7 +92,7 @@ public class ProductReferenceTest {
   }
 
   @Test
-  public void justHC4() throws Exception {
+  public void justTBPOL1() throws Exception {
     Product example = new Product();
     example.setFulfilmentCode("TBPOL1");
     List<Product> products = productReference.searchProducts(example);

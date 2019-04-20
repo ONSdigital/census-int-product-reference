@@ -11,14 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
-  private String fulfilmentCode;
-  private String description;
-  private String language;
-  private CaseType caseType;
-  private List<Region> regions;
-  private DeliveryChannel deliveryChannel;
-  private List<RequestChannel> requestChannels;
-  private Handler handler;
 
   public enum RequestChannel {
     CC,
@@ -50,4 +42,13 @@ public class Product {
     NOTIFY,
     PRINT
   }
+
+  private String fulfilmentCode;
+  private String description;
+  private String language;
+  private CaseType caseType;
+  private List<Region> regions;
+  private DeliveryChannel deliveryChannel;
+  private List<RequestChannel> requestChannels;
+  private Handler handler;
 }
