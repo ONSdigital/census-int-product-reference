@@ -92,14 +92,12 @@ public class ProductReferenceTest {
   }
 
   @Test
-  public void justTBPOL1() throws Exception {
+  public void justOneByCode() throws Exception {
     Product example = new Product();
-    example.setFulfilmentCode("TBPOL1");
+    example.setFulfilmentCode("P_TB_TBTUR1");
     List<Product> products = productReference.searchProducts(example);
-    assertTrue(products.size() > 0);
-    for (Product p : products) {
-      assertTrue(p.getFulfilmentCode().equals("TBPOL1"));
-    }
+    assertTrue(products.size() == 1);
+    assertTrue(products.get(0).getFulfilmentCode().equals("P_TB_TBTUR1"));
   }
 
   @Test
