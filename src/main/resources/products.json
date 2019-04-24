@@ -240,7 +240,7 @@
    "handler": "NOTIFY"
  },
  {
-   "fulfilmentCode": "TBARA1",
+   "fulfilmentCode": "P_TB_TBARA1",
    "description": "Translation Booklet for England & Wales - Arabic",
    "language": "ara",
    "caseType": "H",
@@ -250,7 +250,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBBEN1",
+   "fulfilmentCode": "P_TB_TBBEN1",
    "description": "Translation Booklet for England & Wales - Bengali",
    "language": "ben",
    "caseType": "H",
@@ -260,7 +260,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBCAN1",
+   "fulfilmentCode": "P_TB_TBCAN1",
    "description": "Translation Booklet for England & Wales - Cantonese",
    "language": "yue",
    "caseType": "H",
@@ -270,7 +270,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBCAN4",
+   "fulfilmentCode": "P_TB_TBCAN4",
    "description": "Translation Booklet for Northern Ireland - Cantonese",
    "language": "yue",
    "caseType": "H",
@@ -280,7 +280,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBFRE1",
+   "fulfilmentCode": "P_TB_TBFRE1",
    "description": "Translation Booklet for England & Wales - French",
    "language": "fre",
    "caseType": "H",
@@ -290,7 +290,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBGUJ1",
+   "fulfilmentCode": "P_TB_TBGUJ1",
    "description": "Translation Booklet for England & Wales - Gujarati",
    "language": "guj",
    "caseType": "H",
@@ -300,7 +300,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBGUR1",
+   "fulfilmentCode": "P_TB_TBGUR1",
    "description": "Translation Booklet for England & Wales - Panjabi - Gurmukhi",
    "language": "pan",
    "caseType": "H",
@@ -310,7 +310,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBIRI4",
+   "fulfilmentCode": "P_TB_TBIRI4",
    "description": "Translation Booklet for Northern Ireland - Irish",
    "language": "gle",
    "caseType": "H",
@@ -320,7 +320,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBITA1",
+   "fulfilmentCode": "P_TB_TBITA1",
    "description": "Translation Booklet for England & Wales - Italian",
    "language": "ita",
    "caseType": "H",
@@ -330,7 +330,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBKUR1",
+   "fulfilmentCode": "P_TB_TBKUR1",
    "description": "Translation Booklet for England & Wales - Kurdish",
    "language": "kur",
    "caseType": "H",
@@ -340,7 +340,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBLIT1",
+   "fulfilmentCode": "P_TB_TBLIT1",
    "description": "Translation Booklet for England & Wales - Lithuanian",
    "language": "lit",
    "caseType": "H",
@@ -350,7 +350,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBLIT4",
+   "fulfilmentCode": "T_PB_TBLIT4",
    "description": "Translation Booklet for Northern Ireland - Lithuanian",
    "language": "lit",
    "caseType": "H",
@@ -360,7 +360,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBMAN1",
+   "fulfilmentCode": "P_TB_TBMAN1",
    "description": "Translation Booklet for England & Wales - Mandarin Chinese",
    "language": "cmn",
    "caseType": "H",
@@ -370,8 +370,8 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBMAN4",
-   "description": "Translation Booklet for Northern Ireland - Mandarin Chinese",
+   "fulfilmentCode": "P_TB_TBMAN4",
+   "description": "Translation Booklet for Northern Ireland - Mandarin Chinese",
    "language": "cmn",
    "caseType": "H",
    "regions": ["N"],
@@ -380,7 +380,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBPOL1",
+   "fulfilmentCode": "P_TB_TBPOL1",
    "description": "Translation Booklet for England & Wales - Polish",
    "language": "pol",
    "caseType": "H",
@@ -390,7 +390,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBPOL4",
+   "fulfilmentCode": "P_TB_TBPOL4",
    "description": "Translation Booklet for Northern Ireland - Polish",
    "language": "pol",
    "caseType": "H",
@@ -400,8 +400,8 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBPOR1",
-   "description": "Translation Booklet for England & Wales - Portuguese",
+   "fulfilmentCode": "P_TB_TBPOR1",
+   "description": "Translation Booklet for England & Wales - Portuguese",
    "language": "por",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -410,7 +410,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBRUS1",
+   "fulfilmentCode": "P_TB_TBRUS1",
    "description": "Translation Booklet for England & Wales - Russian",
    "language": "rus",
    "caseType": "H",
@@ -420,7 +420,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBSOM1",
+   "fulfilmentCode": "P_TB_TBSOM1",
    "description": "Translation Booklet for England & Wales - Somali",
    "language": "som",
    "caseType": "H",
@@ -430,7 +430,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBSPA1",
+   "fulfilmentCode": "P_TB_TBSPA1",
    "description": "Translation Booklet for England & Wales - Spanish",
    "language": "spa",
    "caseType": "H",
@@ -440,7 +440,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBTUR1",
+   "fulfilmentCode": "P_TB_TBTUR1",
    "description": "Translation Booklet for England & Wales - Turkish",
    "language": "tur",
    "caseType": "H",
@@ -450,7 +450,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBULS4",
+   "fulfilmentCode": "P_TB_TBULS4",
    "description": "Translation Booklet for Northern Ireland - Ulster Scots",
    "language": "uls",
    "caseType": "H",
@@ -460,7 +460,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBVIE1",
+   "fulfilmentCode": "P_TB_TBVIE1",
    "description": "Translation Booklet for England & Wales - Vietnamese",
    "language": "vie",
    "caseType": "H",
@@ -470,7 +470,7 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "TBYSH1",
+   "fulfilmentCode": "P_TB_TBYSH1",
    "description": "Translation Booklet for England & Wales - Yiddish",
    "language": "yid",
    "caseType": "H",
