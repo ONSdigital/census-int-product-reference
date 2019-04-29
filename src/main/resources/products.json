@@ -50,7 +50,7 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_HC3",
+   "fulfilmentCode": "P_OR_HC2",
    "description": "Household Continuation for Wales (in English)",
    "language": "eng",
    "caseType": "H",
