@@ -121,10 +121,10 @@
  }, 
  {
    "fulfilmentCode": "UACHHT1",
-   "description": "Household UAC for England",
+   "description": "Household UAC for England and Northern Ireland",
    "language": "eng",
    "caseType": "H",
-   "regions": ["E"],
+   "regions": ["E", "N"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD"],
    "handler": "NOTIFY"
@@ -145,16 +145,6 @@
    "language": "wel",
    "caseType": "H",
    "regions": ["W"],
-   "deliveryChannel": "SMS",
-   "requestChannels": ["CC", "FIELD"],
-   "handler": "NOTIFY"
- },
- {
-   "fulfilmentCode": "UACHHT4",
-   "description": "Household UAC for Northern Ireland (in English)",
-   "language": "eng",
-   "caseType": "H",
-   "regions": ["N"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD"],
    "handler": "NOTIFY"
@@ -201,10 +191,10 @@
  },
  {
    "fulfilmentCode": "UACIT1",
-   "description": "Individual UAC for England",
+   "description": "Individual UAC for England and Northern Ireland",
    "language": "eng",
    "caseType": "HI",
-   "regions": ["E"],
+   "regions": ["E", "N"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD", "RH"],
    "handler": "NOTIFY"
@@ -223,16 +213,6 @@
    "fulfilmentCode": "UACIT2W",
    "description": "Individual UAC for Wales (in Welsh)",
    "language": "wel",
-   "caseType": "HI",
-   "regions": ["W"],
-   "deliveryChannel": "SMS",
-   "requestChannels": ["CC", "FIELD", "RH"],
-   "handler": "NOTIFY"
- },
- {
-   "fulfilmentCode": "UACIT4",
-   "description": "Individual UAC for Northern Ireland (in English)",
-   "language": "eng",
    "caseType": "HI",
    "regions": ["W"],
    "deliveryChannel": "SMS",
