@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.godaddy.logging.Logger;
 import com.godaddy.logging.LoggerFactory;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
@@ -35,6 +36,16 @@ public class ProductReference {
       products =
           objectMapper.readValue(
               productFile.getInputStream(), new TypeReference<List<Product>>() {});
+
+      Collection<Product> uniqueByFulfilmentCode =
+          products
+              .stream()
+              .collect(Collectors.toMap(Product::getFulfilmentCode, p -> p, (p, q) -> p))
+              .values();
+      if (products.size() != uniqueByFulfilmentCode.size()) {
+        throw new CTPException(
+            Fault.SYSTEM_ERROR, "Product data set not unique by fulfilment code");
+      }
     } catch (JsonParseException e) {
       throw new CTPException(
           Fault.SYSTEM_ERROR, "Failed to parse common product reference dataset");
@@ -63,6 +74,15 @@ public class ProductReference {
                     && (example.getFulfilmentCode() == null
                         ? true
                         : p.getFulfilmentCode().equals(example.getFulfilmentCode()))
+                    && (example.getInitialContactCode() == null
+                        ? true
+                        : p.getInitialContactCode().equals(example.getInitialContactCode()))
+                    && (example.getReminderContactCode() == null
+                        ? true
+                        : p.getReminderContactCode().equals(example.getReminderContactCode()))
+                    && (example.getFieldDistributionCode() == null
+                        ? true
+                        : p.getFieldDistributionCode().equals(example.getFieldDistributionCode()))
                     && (example.getDeliveryChannel() == null
                         ? true
                         : p.getDeliveryChannel().equals(example.getDeliveryChannel()))

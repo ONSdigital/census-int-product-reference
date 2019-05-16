@@ -28,6 +28,39 @@ public class ProductReferenceTest {
   }
 
   @Test
+  public void onlyInitialContactCode() throws Exception {
+    Product example = new Product();
+    example.setInitialContactCode("P_IC_ICL1");
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getInitialContactCode().equals("P_IC_ICL1"));
+    }
+  }
+
+  @Test
+  public void onlyReminderContactCode() throws Exception {
+    Product example = new Product();
+    example.setReminderContactCode("P_RL_1RL1_1");
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getReminderContactCode().equals("P_RL_1RL1_1"));
+    }
+  }
+
+  @Test
+  public void onlyFieldDistributionCode() throws Exception {
+    Product example = new Product();
+    example.setFieldDistributionCode("D_FD_H1");
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getFieldDistributionCode().equals("D_FD_H1"));
+    }
+  }
+
+  @Test
   public void onlyIndividual() throws Exception {
     Product example = new Product();
     example.setCaseType(CaseType.HI);

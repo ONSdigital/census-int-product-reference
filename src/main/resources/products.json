@@ -1,7 +1,101 @@
 [
  {
-   "fulfilmentCode": "P_OR_H1",
+   "description": "Household Letter for England - Group 1",
+   "fulfilmentCode": "P_RL_1RL1_1",
+   "initialContactCode": "P_IC_ICL1",
+   "reminderContactCode": "P_RL_1RL1_1",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["E"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
+   "description": "Household Letter - Bilingual - Group 1",
+   "fulfilmentCode": "P_RL_1RL2B_1",
+   "initialContactCode": "P_IC_ICL2B",
+   "reminderContactCode": "P_RL_1RL2B_1",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["W"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
+   "description": "Household Letter for Northern Ireland - Group 1",
+   "fulfilmentCode": "P_RL_IRL4",
+   "initialContactCode": "P_IC_ICL4",
+   "reminderContactCode": "P_RL_IRL4",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["N"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
+   "description": "Household Letter for England - Group 2",
+   "fulfilmentCode": "P_RL_1RL1_2",
+   "initialContactCode": "P_IC_ICL1",
+   "reminderContactCode": "P_RL_1RL1_2",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["E"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
+   "description": "Household Letter - Bilingual - Group 2",
+   "fulfilmentCode": "P_RL_1RL2B_2",
+   "initialContactCode": "P_IC_ICL2B",
+   "reminderContactCode": "P_RL_1RL2B_2",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["W"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
+   "description": "Household Letter for England - Group 3a",
+   "fulfilmentCode": "P_RL_2RL1_3a",
+   "initialContactCode": "P_IC_ICL1",
+   "reminderContactCode": "P_RL_2RL1_3a",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["E"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
+   "description": "Household Letter - Bilingual - Group 3a",
+   "fulfilmentCode": "P_RL_2RL2b_3a",
+   "initialContactCode": "P_IC_ICL2B",
+   "reminderContactCode": "P_RL_2RL2b_3a",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["W"],
+   "deliveryChannel": "POST",
+   "requestChannels": [],
+   "handler": "PRINT"
+ },
+ {
    "description": "Household Questionnaire for England",
+   "fulfilmentCode": "P_OR_H1",
+   "initialContactCode": "P_IC_H1",
+   "reminderContactCode": "P_QU_H1",
+   "fieldDistributionCode": "D_FD_H1",
    "language": "eng",
    "caseType": "H",
    "regions": ["E"],
@@ -10,8 +104,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_H2",
    "description": "Household Questionnaire for Wales (in English)",
+   "fulfilmentCode": "P_OR_H2",
+   "initialContactCode": "P_IC_H2",
+   "reminderContactCode": "P_QU_H2",
+   "fieldDistributionCode": "D_FD_H2",
    "language": "eng",
    "caseType": "H",
    "regions": ["W"],
@@ -20,8 +117,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_H2W",
    "description": "Household Questionnaire for Wales (in Welsh)",
+   "fulfilmentCode": "P_OR_H2W",
+   "initialContactCode": "P_IC_H2W",
+   "reminderContactCode": "P_QU_H2W",
+   "fieldDistributionCode": "D_FD_H2W",
    "language": "wel",
    "caseType": "H",
    "regions": ["W"],
@@ -30,8 +130,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_H4",
    "description": "Household Questionnaire for Northern Ireland (in English)",
+   "fulfilmentCode": "P_OR_H4",
+   "initialContactCode": "P_IC_H4",
+   "reminderContactCode": "P_QU_H4",
+   "fieldDistributionCode": "D_FD_H4",
    "language": "eng",
    "caseType": "H",
    "regions": ["N"],
@@ -40,8 +143,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_HC1",
    "description": "Household Continuation for England",
+   "fulfilmentCode": "P_OR_HC1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_HC1",
    "language": "eng",
    "caseType": "H",
    "regions": ["E"],
@@ -50,8 +156,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_HC2",
    "description": "Household Continuation for Wales (in English)",
+   "fulfilmentCode": "P_OR_HC2",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_HC2",
    "language": "eng",
    "caseType": "H",
    "regions": ["W"],
@@ -60,8 +169,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_HC2W",
    "description": "Household Continuation for Wales (in Welsh)",
+   "fulfilmentCode": "P_OR_HC2W",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_HC2W",
    "language": "wel",
    "caseType": "H",
    "regions": ["W"],
@@ -70,8 +182,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_HC4",
    "description": "Household Continuation for Northern Ireland (in English)",
+   "fulfilmentCode": "P_OR_HC4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_HC4",
    "language": "eng",
    "caseType": "H",
    "regions": ["N"],
@@ -80,8 +195,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_LP_HL1",
    "description": "Household Questionnaire (Large Print) for England",
+   "fulfilmentCode": "P_LP_HL1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "H",
    "regions": ["E"],
@@ -90,8 +208,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_LP_HL2",
    "description": "Household Questionnaire (Large Print) for Wales (in English)",
+   "fulfilmentCode": "P_LP_HL2",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "H",
    "regions": ["W"],
@@ -100,8 +221,11 @@
    "handler": "QM"
  }, 
  {
-   "fulfilmentCode": "P_LP_HL2W",
    "description": "Household Questionnaire (Large Print) for Wales (in Welsh)",
+   "fulfilmentCode": "P_LP_HL2W",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "wel",
    "caseType": "H",
    "regions": ["W"],
@@ -110,8 +234,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_LP_HL4",
    "description": "Household Questionnaire (Large Print) for Northern Ireland (in English)",
+   "fulfilmentCode": "P_LP_HL4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "H",
    "regions": ["N"],
@@ -120,18 +247,24 @@
    "handler": "QM"
  }, 
  {
+   "description": "Household Unique Access Code for England",
    "fulfilmentCode": "UACHHT1",
-   "description": "Household UAC for England and Northern Ireland",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "H",
-   "regions": ["E", "N"],
+   "regions": ["E"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD"],
    "handler": "NOTIFY"
  },
  {
+   "description": "Household Unique Access Code for Wales (in English)",
    "fulfilmentCode": "UACHHT2",
-   "description": "Household UAC for Wales (in English)",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "H",
    "regions": ["W"],
@@ -140,8 +273,11 @@
    "handler": "NOTIFY"
  },
  {
+   "description": "Household Unique Access Code for Wales (in Welsh)",
    "fulfilmentCode": "UACHHT2W",
-   "description": "Household UAC for Wales (in Welsh)",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "wel",
    "caseType": "H",
    "regions": ["W"],
@@ -150,8 +286,24 @@
    "handler": "NOTIFY"
  },
  {
-   "fulfilmentCode": "P_OR_I1",
+   "description": "Household Unique Access Code for Northern Ireland",
+   "fulfilmentCode": "UACHHT4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "H",
+   "regions": ["N"],
+   "deliveryChannel": "SMS",
+   "requestChannels": ["CC", "FIELD"],
+   "handler": "NOTIFY"
+ },
+ {
    "description": "Individual Questionnaire for England",
+   "fulfilmentCode": "P_OR_I1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_I1",
    "language": "eng",
    "caseType": "HI",
    "regions": ["E"],
@@ -160,8 +312,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_I2",
    "description": "Individual Questionnaire for Wales (in English)",
+   "fulfilmentCode": "P_OR_I2",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_I2",
    "language": "eng",
    "caseType": "HI",
    "regions": ["W"],
@@ -170,8 +325,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_I2W",
    "description": "Individual Questionnaire for Wales (in Welsh)",
+   "fulfilmentCode": "P_OR_I2W",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_I2W",
    "language": "wel",
    "caseType": "HI",
    "regions": ["W"],
@@ -180,8 +338,11 @@
    "handler": "QM"
  },
  {
-   "fulfilmentCode": "P_OR_I4",
    "description": "Individual Questionnaire for Northern Ireland (in English)",
+   "fulfilmentCode": "P_OR_I4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "D_FD_I4",
    "language": "eng",
    "caseType": "HI",
    "regions": ["N"],
@@ -190,18 +351,24 @@
    "handler": "QM"
  },
  {
+   "description": "Individual Unique Access Code for England",
    "fulfilmentCode": "UACIT1",
-   "description": "Individual UAC for England and Northern Ireland",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "HI",
-   "regions": ["E", "N"],
+   "regions": ["E"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD", "RH"],
    "handler": "NOTIFY"
  },
  {
+   "description": "Individual Unique Access Code for Wales (in English)",
    "fulfilmentCode": "UACIT2",
-   "description": "Individual UAC for Wales (in English)",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "eng",
    "caseType": "HI",
    "regions": ["W"],
@@ -210,8 +377,11 @@
    "handler": "NOTIFY"
  },
  {
+   "description": "Individual Unique Access Code for Wales (in Welsh)",
    "fulfilmentCode": "UACIT2W",
-   "description": "Individual UAC for Wales (in Welsh)",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "wel",
    "caseType": "HI",
    "regions": ["W"],
@@ -220,8 +390,24 @@
    "handler": "NOTIFY"
  },
  {
-   "fulfilmentCode": "P_TB_TBARA1",
+   "description": "Individual Unique Access Code for Northern Ireland",
+   "fulfilmentCode": "UACIT4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
+   "language": "eng",
+   "caseType": "HI",
+   "regions": ["N"],
+   "deliveryChannel": "SMS",
+   "requestChannels": ["CC", "FIELD", "RH"],
+   "handler": "NOTIFY"
+ },
+ {
    "description": "Translation Booklet for England & Wales - Arabic",
+   "fulfilmentCode": "P_TB_TBARA1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "ara",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -230,8 +416,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBBEN1",
    "description": "Translation Booklet for England & Wales - Bengali",
+   "fulfilmentCode": "P_TB_TBBEN1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "ben",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -240,8 +429,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBCAN1",
    "description": "Translation Booklet for England & Wales - Cantonese",
+   "fulfilmentCode": "P_TB_TBCAN1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "yue",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -250,8 +442,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBCAN4",
    "description": "Translation Booklet for Northern Ireland - Cantonese",
+   "fulfilmentCode": "P_TB_TBCAN4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "yue",
    "caseType": "H",
    "regions": ["N"],
@@ -260,8 +455,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBFRE1",
    "description": "Translation Booklet for England & Wales - French",
+   "fulfilmentCode": "P_TB_TBFRE1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "fre",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -270,8 +468,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBGUJ1",
    "description": "Translation Booklet for England & Wales - Gujarati",
+   "fulfilmentCode": "P_TB_TBGUJ1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "guj",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -280,8 +481,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBGUR1",
    "description": "Translation Booklet for England & Wales - Panjabi - Gurmukhi",
+   "fulfilmentCode": "P_TB_TBGUR1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "pan",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -290,8 +494,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBIRI4",
    "description": "Translation Booklet for Northern Ireland - Irish",
+   "fulfilmentCode": "P_TB_TBIRI4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "gle",
    "caseType": "H",
    "regions": ["N"],
@@ -300,8 +507,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBITA1",
    "description": "Translation Booklet for England & Wales - Italian",
+   "fulfilmentCode": "P_TB_TBITA1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "ita",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -310,8 +520,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBKUR1",
    "description": "Translation Booklet for England & Wales - Kurdish",
+   "fulfilmentCode": "P_TB_TBKUR1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "kur",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -320,8 +533,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBLIT1",
    "description": "Translation Booklet for England & Wales - Lithuanian",
+   "fulfilmentCode": "P_TB_TBLIT1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "lit",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -330,8 +546,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "T_PB_TBLIT4",
    "description": "Translation Booklet for Northern Ireland - Lithuanian",
+   "fulfilmentCode": "T_PB_TBLIT4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "lit",
    "caseType": "H",
    "regions": ["N"],
@@ -340,8 +559,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBMAN1",
    "description": "Translation Booklet for England & Wales - Mandarin Chinese",
+   "fulfilmentCode": "P_TB_TBMAN1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "cmn",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -350,8 +572,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBMAN4",
    "description": "Translation Booklet for Northern Ireland - Mandarin Chinese",
+   "fulfilmentCode": "P_TB_TBMAN4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "cmn",
    "caseType": "H",
    "regions": ["N"],
@@ -360,8 +585,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBPOL1",
    "description": "Translation Booklet for England & Wales - Polish",
+   "fulfilmentCode": "P_TB_TBPOL1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "pol",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -370,8 +598,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBPOL4",
    "description": "Translation Booklet for Northern Ireland - Polish",
+   "fulfilmentCode": "P_TB_TBPOL4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "pol",
    "caseType": "H",
    "regions": ["N"],
@@ -380,8 +611,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBPOR1",
    "description": "Translation Booklet for England & Wales - Portuguese",
+   "fulfilmentCode": "P_TB_TBPOR1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "por",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -390,8 +624,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBRUS1",
    "description": "Translation Booklet for England & Wales - Russian",
+   "fulfilmentCode": "P_TB_TBRUS1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "rus",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -400,8 +637,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBSOM1",
    "description": "Translation Booklet for England & Wales - Somali",
+   "fulfilmentCode": "P_TB_TBSOM1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "som",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -410,8 +650,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBSPA1",
    "description": "Translation Booklet for England & Wales - Spanish",
+   "fulfilmentCode": "P_TB_TBSPA1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "spa",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -420,8 +663,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBTUR1",
    "description": "Translation Booklet for England & Wales - Turkish",
+   "fulfilmentCode": "P_TB_TBTUR1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "tur",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -430,8 +676,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBULS4",
    "description": "Translation Booklet for Northern Ireland - Ulster Scots",
+   "fulfilmentCode": "P_TB_TBULS4",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "uls",
    "caseType": "H",
    "regions": ["N"],
@@ -440,8 +689,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBVIE1",
    "description": "Translation Booklet for England & Wales - Vietnamese",
+   "fulfilmentCode": "P_TB_TBVIE1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "vie",
    "caseType": "H",
    "regions": ["E", "W"],
@@ -450,8 +702,11 @@
    "handler": "PRINT"
  },
  {
-   "fulfilmentCode": "P_TB_TBYSH1",
    "description": "Translation Booklet for England & Wales - Yiddish",
+   "fulfilmentCode": "P_TB_TBYSH1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
    "language": "yid",
    "caseType": "H",
    "regions": ["E", "W"],

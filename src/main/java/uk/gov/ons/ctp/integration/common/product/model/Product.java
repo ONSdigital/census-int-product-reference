@@ -43,7 +43,11 @@ public class Product {
     PRINT
   }
 
+  // NOTE : fulfilementCode must be unique within the Product data set
   private String fulfilmentCode;
+  private String initialContactCode;
+  private String reminderContactCode;
+  private String fieldDistributionCode;
   private String description;
   private String language;
   private CaseType caseType;
