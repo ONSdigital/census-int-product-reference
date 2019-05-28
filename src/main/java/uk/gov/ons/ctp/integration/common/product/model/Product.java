@@ -31,9 +31,9 @@ public class Product {
   }
 
   public enum CaseType {
-    H,
+    HH,
     HI,
-    C,
+    CE,
     CI
   }
 
