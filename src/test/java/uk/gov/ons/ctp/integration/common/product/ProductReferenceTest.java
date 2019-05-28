@@ -23,7 +23,7 @@ public class ProductReferenceTest {
   @Test
   public void onlyHousehold() throws Exception {
     Product example = new Product();
-    example.setCaseType(CaseType.H);
+    example.setCaseType(CaseType.HH);
     assertOnlyExpectedCaseType(example);
   }
 
