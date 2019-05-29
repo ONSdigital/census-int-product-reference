@@ -50,7 +50,7 @@ public class ProductReferenceTest {
       assertTrue(p.getHandler().equals(Handler.QM));
     }
   }
-  
+
   @Test
   public void onlyFieldQuestionnaireCodeH1() throws Exception {
     Product example = new Product();
@@ -72,7 +72,7 @@ public class ProductReferenceTest {
       assertTrue(p.getRequestChannels().contains(RequestChannel.CC));
     }
   }
-  
+
   @Test
   public void onlyReminderContactCode() throws Exception {
     Product example = new Product();
