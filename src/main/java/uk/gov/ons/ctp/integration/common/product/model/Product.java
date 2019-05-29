@@ -48,6 +48,7 @@ public class Product {
   private String initialContactCode;
   private String reminderContactCode;
   private String fieldDistributionCode;
+  private String fieldQuestionnaireCode;
   private String description;
   private String language;
   private CaseType caseType;

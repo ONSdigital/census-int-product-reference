@@ -83,6 +83,9 @@ public class ProductReference {
                     && (example.getFieldDistributionCode() == null
                         ? true
                         : p.getFieldDistributionCode().equals(example.getFieldDistributionCode()))
+                    && (example.getFieldQuestionnaireCode() == null
+                        ? true
+                        : p.getFieldQuestionnaireCode().equals(example.getFieldQuestionnaireCode()))
                     && (example.getDeliveryChannel() == null
                         ? true
                         : p.getDeliveryChannel().equals(example.getDeliveryChannel()))
