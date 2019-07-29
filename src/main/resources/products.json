@@ -221,7 +221,7 @@
    "regions": ["E"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC", "FIELD"],
-   "handler": "QM"
+   "handler": "PRINT"
  },
  {
    "description": "Household Questionnaire (Large Print) for Wales (in English)",
@@ -235,7 +235,7 @@
    "regions": ["W"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC", "FIELD"],
-   "handler": "QM"
+   "handler": "PRINT"
  }, 
  {
    "description": "Household Questionnaire (Large Print) for Wales (in Welsh)",
@@ -249,7 +249,7 @@
    "regions": ["W"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC", "FIELD"],
-   "handler": "QM"
+   "handler": "PRINT"
  },
  {
    "description": "Household Questionnaire (Large Print) for Northern Ireland (in English)",
@@ -263,7 +263,7 @@
    "regions": ["N"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC", "FIELD"],
-   "handler": "QM"
+   "handler": "PRINT"
  }, 
  {
    "description": "Household Unique Access Code for England",
