@@ -742,6 +742,20 @@
    "handler": "PRINT"
  },
  {
+   "description": "Translation Booklet for England & Wales - Urdu",
+   "fulfilmentCode": "P_TB_TBURD1",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
+   "fieldQuestionnaireCode": "",
+   "language": "urd",
+   "caseType": "HH",
+   "regions": ["E", "W"],
+   "deliveryChannel": "POST",
+   "requestChannels": ["CC", "FIELD"],
+   "handler": "PRINT"
+ },
+ {
    "description": "Translation Booklet for England & Wales - Vietnamese",
    "fulfilmentCode": "P_TB_TBVIE1",
    "initialContactCode": "",
