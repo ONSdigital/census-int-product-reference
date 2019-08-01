@@ -12,7 +12,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.gov.ons.ctp.integration.common.product.model.Product;
 import uk.gov.ons.ctp.integration.common.product.model.Product.CaseType;
 import uk.gov.ons.ctp.integration.common.product.model.Product.DeliveryChannel;
+import uk.gov.ons.ctp.integration.common.product.model.Product.Handler;
 import uk.gov.ons.ctp.integration.common.product.model.Product.Region;
+import uk.gov.ons.ctp.integration.common.product.model.Product.RequestChannel;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ProductReference.class})
@@ -23,7 +25,7 @@ public class ProductReferenceTest {
   @Test
   public void onlyHousehold() throws Exception {
     Product example = new Product();
-    example.setCaseType(CaseType.H);
+    example.setCaseType(CaseType.HH);
     assertOnlyExpectedCaseType(example);
   }
 
@@ -35,6 +37,39 @@ public class ProductReferenceTest {
     assertTrue(products.size() > 0);
     for (Product p : products) {
       assertTrue(p.getInitialContactCode().equals("P_IC_ICL1"));
+    }
+  }
+
+  @Test
+  public void onlyQMHandler() throws Exception {
+    Product example = new Product();
+    example.setHandler(Handler.QM);
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getHandler().equals(Handler.QM));
+    }
+  }
+
+  @Test
+  public void onlyFieldQuestionnaireCodeH1() throws Exception {
+    Product example = new Product();
+    example.setFieldQuestionnaireCode("H1");
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getFieldQuestionnaireCode().equals("H1"));
+    }
+  }
+
+  @Test
+  public void onlyRequestChannelCC() throws Exception {
+    Product example = new Product();
+    example.setRequestChannels(Arrays.asList(RequestChannel.CC));
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getRequestChannels().contains(RequestChannel.CC));
     }
   }
 
