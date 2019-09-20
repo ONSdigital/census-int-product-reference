@@ -56,3 +56,4 @@ target
 *.data
 *.redo
 *.backup
+.factorypath
