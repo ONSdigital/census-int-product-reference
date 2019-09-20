@@ -444,7 +444,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -472,7 +472,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -500,7 +500,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -514,7 +514,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -528,7 +528,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -542,7 +542,7 @@
    "caseType": "HH",
    "regions": ["N"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -556,7 +556,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -570,7 +570,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -584,7 +584,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -598,7 +598,7 @@
    "caseType": "HH",
    "regions": ["N"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -612,7 +612,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -640,7 +640,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -654,7 +654,7 @@
    "caseType": "HH",
    "regions": ["N"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -668,7 +668,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -682,7 +682,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -710,7 +710,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -738,7 +738,7 @@
    "caseType": "HH",
    "regions": ["N"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -752,7 +752,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  },
  {
@@ -780,7 +780,7 @@
    "caseType": "HH",
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
-   "requestChannels": ["CC", "FIELD"],
+   "requestChannels": [],
    "handler": "PRINT"
  }
 ]
