@@ -24,7 +24,7 @@ public class ProductReference {
 
   private static final Logger log = LoggerFactory.getLogger(ProductReference.class);
 
-  @Value("classpath:/products.json")
+  @Value("${productsJsonPath:classpath:/products.json}")
   Resource productFile;
 
   private List<Product> products;
@@ -62,12 +62,15 @@ public class ProductReference {
         .stream()
         .filter(
             p ->
-                (example.getCaseType() == null
+                (example.getCaseTypes() == null
                         ? true
-                        : p.getCaseType().equals(example.getCaseType()))
+                        : p.getCaseTypes().containsAll(example.getCaseTypes()))
                     && (example.getHandler() == null
                         ? true
                         : p.getHandler().equals(example.getHandler()))
+                    && (example.getIndividual() == null
+                        ? true
+                        : p.getIndividual().equals(example.getIndividual()))
                     && (example.getLanguage() == null
                         ? true
                         : p.getLanguage().equals(example.getLanguage()))

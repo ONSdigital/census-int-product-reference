@@ -5,10 +5,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.gov.ons.ctp.integration.common.product.model.Product;
 import uk.gov.ons.ctp.integration.common.product.model.Product.CaseType;
 import uk.gov.ons.ctp.integration.common.product.model.Product.DeliveryChannel;
@@ -16,17 +14,47 @@ import uk.gov.ons.ctp.integration.common.product.model.Product.Handler;
 import uk.gov.ons.ctp.integration.common.product.model.Product.Region;
 import uk.gov.ons.ctp.integration.common.product.model.Product.RequestChannel;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+/**
+ * THese are the core product tests that will be run against both the test json and the production
+ * json, by the appropriate sub classes
+ *
+ * @author philwhiles
+ */
 @ContextConfiguration(classes = {ProductReference.class})
-public class ProductReferenceTest {
+public abstract class ProductReferenceTest {
 
-  @Autowired private ProductReference productReference;
+  @Autowired ProductReference productReference;
+
+  @Test
+  public void onlyHouseholdAndNotIndividual() throws Exception {
+    Product example = new Product();
+    example.setCaseTypes(Arrays.asList(CaseType.HH));
+    example.setIndividual(false);
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getCaseTypes().contains(CaseType.HH));
+      assertTrue(p.getIndividual().equals(false));
+    }
+  }
 
   @Test
   public void onlyHousehold() throws Exception {
     Product example = new Product();
-    example.setCaseType(CaseType.HH);
-    assertOnlyExpectedCaseType(example);
+    example.setCaseTypes(Arrays.asList(CaseType.HH));
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    boolean indivFalse = false;
+    boolean indivTrue = false;
+    for (Product p : products) {
+      assertTrue(p.getCaseTypes().contains(CaseType.HH));
+      if (p.getIndividual()) {
+        indivTrue = true;
+      } else {
+        indivFalse = true;
+      }
+    }
+    assertTrue(indivFalse & indivTrue);
   }
 
   @Test
@@ -98,14 +126,22 @@ public class ProductReferenceTest {
   @Test
   public void onlyIndividual() throws Exception {
     Product example = new Product();
-    example.setCaseType(CaseType.HI);
-    assertOnlyExpectedCaseType(example);
+    example.setIndividual(true);
+    assertOnlyExpectedIndividuality(example);
   }
 
-  private void assertOnlyExpectedCaseType(Product example) throws Exception {
+  private void assertOnlyExpectedIndividuality(Product example) throws Exception {
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
+    for (Product p : products) {
+      assertTrue(p.getIndividual() == example.getIndividual());
+    }
+  }
+
+  private void assertOnlyExpectedCaseTypes(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
     for (Product p : products) {
-      assertTrue(p.getCaseType().equals(example.getCaseType()));
+      assertTrue(p.getCaseTypes().containsAll(example.getCaseTypes()));
     }
   }
 
@@ -139,6 +175,7 @@ public class ProductReferenceTest {
 
   private void assertOnlyExpectedLanguage(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
     for (Product p : products) {
       assertTrue(p.getLanguage().equals(example.getLanguage()));
     }
@@ -147,7 +184,7 @@ public class ProductReferenceTest {
   @Test
   public void allNIreland() throws Exception {
     Product example = new Product();
-    example.setRegions(Arrays.asList(Region.E));
+    example.setRegions(Arrays.asList(Region.N));
     assertExpectedRegion(example);
   }
 
@@ -184,6 +221,7 @@ public class ProductReferenceTest {
     Product example = new Product();
     example.setDeliveryChannel(DeliveryChannel.SMS);
     List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() > 0);
     for (Product p : products) {
       assertTrue(p.getDeliveryChannel().equals(example.getDeliveryChannel()));
     }
