@@ -1,5 +1,11 @@
 package uk.gov.ons.ctp.integration.common.product;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.godaddy.logging.Logger;
+import com.godaddy.logging.LoggerFactory;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,12 +16,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.godaddy.logging.Logger;
-import com.godaddy.logging.LoggerFactory;
 import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.common.error.CTPException.Fault;
 import uk.gov.ons.ctp.integration.common.product.model.Product;
@@ -46,7 +46,7 @@ public class ProductReference {
               .stream()
               .collect(Collectors.toMap(Product::getFulfilmentCode, p -> p, (p, q) -> p))
               .values();
-      
+
       if (products.size() != uniqueByFulfilmentCode.size()) {
         throw new CTPException(
             Fault.SYSTEM_ERROR, "Product data set not unique by fulfilment code");
@@ -56,17 +56,17 @@ public class ProductReference {
       // rather than over complicate the searchProducts filter
       // replace null lists with empty lists
       products
-        .stream()
-        .filter(p -> p.getRequestChannels() == null)
-        .forEach(p -> p.setRequestChannels(new ArrayList<RequestChannel>()));
+          .stream()
+          .filter(p -> p.getRequestChannels() == null)
+          .forEach(p -> p.setRequestChannels(new ArrayList<RequestChannel>()));
       products
-        .stream()
-        .filter(p -> p.getRegions() == null)
-        .forEach(p -> p.setRegions(new ArrayList<Region>()));
+          .stream()
+          .filter(p -> p.getRegions() == null)
+          .forEach(p -> p.setRegions(new ArrayList<Region>()));
       products
-        .stream()
-        .filter(p -> p.getCaseTypes() == null)
-        .forEach(p -> p.setCaseTypes(new ArrayList<CaseType>()));
+          .stream()
+          .filter(p -> p.getCaseTypes() == null)
+          .forEach(p -> p.setCaseTypes(new ArrayList<CaseType>()));
 
     } catch (JsonParseException e) {
       throw new CTPException(
