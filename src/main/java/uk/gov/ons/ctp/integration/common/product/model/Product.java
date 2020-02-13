@@ -21,7 +21,6 @@ public class Product {
   public enum DeliveryChannel {
     POST,
     SMS,
-    EMAIL
   }
 
   public enum Region {
@@ -32,9 +31,8 @@ public class Product {
 
   public enum CaseType {
     HH,
-    HI,
     CE,
-    CI
+    SPG
   }
 
   public enum Handler {
@@ -51,7 +49,8 @@ public class Product {
   private String fieldQuestionnaireCode;
   private String description;
   private String language;
-  private CaseType caseType;
+  private List<CaseType> caseTypes;
+  private Boolean individual;
   private List<Region> regions;
   private DeliveryChannel deliveryChannel;
   private List<RequestChannel> requestChannels;

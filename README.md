@@ -5,14 +5,21 @@
 This project contains reusable service layer code to facilitate the lookup of Census product types (aka fulfilments).
 and returns a list of product objects, encapsulating :
 
-*  fulfilmentCode
 *  description
-*  language
-*  caseType
+*  caseTypes []
+*  individual
 *  regions []
+*  language
+*  initialContactCode
+*  reminderContactCode
+*  fieldDistributionCode
+*  fieldQuestionnaireCode
+*  fulfilmentCode
 *  deliveryChannel
 *  requestChannels []
 *  handler
+
+Note that the valid caseTypes are one of [HH | CE | SPG] - HI is invalid in the product reference, see 'individual'.
 
 The ProductReference class is a Spring Component that can be injected into an application, and provides a searchProducts
 method that takes an example Product. That example is compared with all known Products, fields by field, and those matching
@@ -27,4 +34,4 @@ The Product class used as the example and the return type contains enum definiti
 in the application that uses the Component. This project has no dependency on either the Census Contact Centre Service or the 
 RH Service, so needs it's own enums.
 ## Copyright
-Copyright (C) 2019 Crown Copyright (Office for National Statistics)
+Copyright (C) 2019,2020 Crown Copyright (Office for National Statistics)
