@@ -103,6 +103,21 @@
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD", "RH"],
    "handler": "NOTIFY"
+ },
+ {
+   "description": "A product that has two casetypes",
+   "fulfilmentCode": "2CASETYPES",
+   "initialContactCode": "",
+   "reminderContactCode": "",
+   "fieldDistributionCode": "",
+   "fieldQuestionnaireCode": "HUAC1",
+   "language": "eng",
+   "caseTypes": ["HH","CE"],
+   "individual": false,
+   "regions": ["E"],
+   "deliveryChannel": "SMS",
+   "requestChannels": ["CC", "FIELD", "RH"],
+   "handler": "NOTIFY"
  }
 ]
 
