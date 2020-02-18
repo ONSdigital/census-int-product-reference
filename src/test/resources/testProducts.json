@@ -1,6 +1,7 @@
 [ 
  {
    "description": "Individual Questionnaire for England",
+   "productGroup": "QUESTIONNAIRE",
    "fulfilmentCode": "P_OR_I1",
    "initialContactCode": "",
    "reminderContactCode": "",
@@ -16,6 +17,7 @@
  },
  {
    "description": "Translation Booklet for England & Wales - Polish",
+   "productGroup": "TRANSLATION",
    "fulfilmentCode": "P_TB_TBPOL1",
    "initialContactCode": "",
    "reminderContactCode": "",
@@ -31,6 +33,7 @@
  },
  {
    "description": "Household Letter for England - Group 1",
+   "productGroup": "INVITE",
    "fulfilmentCode": "P_RL_1RL1_1",
    "initialContactCode": "P_IC_ICL1",
    "reminderContactCode": "P_RL_1RL1_1",
@@ -46,6 +49,7 @@
  },
  {
    "description": "Household Questionnaire for England",
+   "productGroup": "QUESTIONNAIRE",
    "fulfilmentCode": "P_OR_H1",
    "initialContactCode": "P_IC_H1",
    "reminderContactCode": "P_QU_H1",
@@ -61,6 +65,7 @@
  },
  {
    "description": "Translation Booklet for England & Wales - Turkish",
+   "productGroup": "TRANSLATION",
    "fulfilmentCode": "P_TB_TBTUR1",
    "initialContactCode": "",
    "reminderContactCode": "",
@@ -76,6 +81,7 @@
  },
  {
    "description": "Household Questionnaire (Large Print) for Northern Ireland (in English)",
+   "productGroup": "LARGE_PRINT",
    "fulfilmentCode": "P_LP_HL4",
    "initialContactCode": "",
    "reminderContactCode": "",
@@ -91,6 +97,7 @@
  },
  {
    "description": "Household Unique Access Code for England",
+   "productGroup": "UAC",
    "fulfilmentCode": "UACHHT1",
    "initialContactCode": "",
    "reminderContactCode": "",
@@ -106,6 +113,7 @@
  },
  {
    "description": "A product that has two casetypes",
+   "productGroup": "QUESTIONNAIRE",
    "fulfilmentCode": "2CASETYPES",
    "initialContactCode": "",
    "reminderContactCode": "",

@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.gov.ons.ctp.integration.common.product.model.Product;
 import uk.gov.ons.ctp.integration.common.product.model.Product.CaseType;
 import uk.gov.ons.ctp.integration.common.product.model.Product.Handler;
+import uk.gov.ons.ctp.integration.common.product.model.Product.ProductGroup;
 
 /**
  * Runs the core tests against the test json as well as additional tests below
@@ -40,5 +41,16 @@ public class TestProductReferenceTest extends ProductReferenceTest {
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() == 1);
     assertTrue(products.get(0).getFulfilmentCode().equals("2CASETYPES"));
+  }
+
+  @Test
+  public void onlyTranslations() throws Exception {
+    Product example = new Product();
+    example.setProductGroup(ProductGroup.TRANSLATION);
+    List<Product> products = productReference.searchProducts(example);
+    assertTrue(products.size() == 2);
+    for (Product p : products) {
+      assertTrue(p.getProductGroup().equals(ProductGroup.TRANSLATION));
+    }
   }
 }

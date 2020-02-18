@@ -87,6 +87,9 @@ public class ProductReference {
                 (example.getCaseTypes() == null
                         ? true
                         : p.getCaseTypes().containsAll(example.getCaseTypes()))
+                    && (example.getProductGroup() == null
+                        ? true
+                        : p.getProductGroup().equals(example.getProductGroup()))
                     && (example.getHandler() == null
                         ? true
                         : p.getHandler().equals(example.getHandler()))

@@ -41,8 +41,18 @@ public class Product {
     PRINT
   }
 
+  public enum ProductGroup {
+    INVITE,
+    QUESTIONNAIRE,
+    CONTINUATION,
+    UAC,
+    LARGE_PRINT,
+    TRANSLATION
+  }
+
   // NOTE : fulfilementCode must be unique within the Product data set
   private String fulfilmentCode;
+  private ProductGroup productGroup;
   private String initialContactCode;
   private String reminderContactCode;
   private String fieldDistributionCode;
