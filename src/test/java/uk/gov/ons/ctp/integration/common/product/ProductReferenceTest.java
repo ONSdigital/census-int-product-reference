@@ -1,6 +1,6 @@
 package uk.gov.ons.ctp.integration.common.product;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -34,7 +34,7 @@ public abstract class ProductReferenceTest {
     assertTrue(products.size() > 0);
     for (Product p : products) {
       assertTrue(p.getCaseTypes().contains(CaseType.HH));
-      assertTrue(p.getIndividual().equals(false));
+      assertFalse(p.getIndividual());
     }
   }
 
@@ -134,7 +134,7 @@ public abstract class ProductReferenceTest {
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() > 0);
     for (Product p : products) {
-      assertTrue(p.getIndividual() == example.getIndividual());
+      assertEquals(p.getIndividual(), example.getIndividual());
     }
   }
 

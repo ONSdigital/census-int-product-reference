@@ -95,7 +95,7 @@ public class ProductReference {
                         : p.getHandler().equals(example.getHandler()))
                     && (example.getIndividual() == null
                         ? true
-                        : p.getIndividual().equals(example.getIndividual()))
+                        : p.getIndividual() == example.getIndividual())
                     && (example.getLanguage() == null
                         ? true
                         : p.getLanguage().equals(example.getLanguage()))

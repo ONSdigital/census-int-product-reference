@@ -1,5 +1,6 @@
 package uk.gov.ons.ctp.integration.common.product.model;
 
+import java.util.Arrays;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,7 +33,16 @@ public class Product {
   public enum CaseType {
     HH,
     CE,
-    SPG
+    SPG;
+
+    /**
+     * toList is a convenience method to accommodate the change to casetypes now being an array
+     *
+     * @return a java.util.List containing just this CaseType
+     */
+    public List<CaseType> toList() {
+      return Arrays.asList(this);
+    }
   }
 
   public enum Handler {
