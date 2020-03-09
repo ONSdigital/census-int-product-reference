@@ -41,7 +41,7 @@ public abstract class ProductReferenceTest {
   @Test
   public void onlyHousehold() throws Exception {
     Product example = new Product();
-    example.setCaseTypes(Arrays.asList(CaseType.HH));
+    example.setCaseTypes(CaseType.HH.toList());
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() > 0);
     boolean indivFalse = false;

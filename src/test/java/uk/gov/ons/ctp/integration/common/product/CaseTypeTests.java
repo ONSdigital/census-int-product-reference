@@ -2,7 +2,7 @@ package uk.gov.ons.ctp.integration.common.product;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static uk.gov.ons.ctp.integration.common.product.CustomAsserts.assertThrows;
+import static uk.gov.ons.ctp.common.utility.CustomAsserts.assertThrows;
 
 import java.util.Arrays;
 import java.util.List;
