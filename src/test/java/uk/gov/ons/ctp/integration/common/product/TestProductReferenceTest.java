@@ -12,6 +12,7 @@ import uk.gov.ons.ctp.integration.common.product.model.Product;
 import uk.gov.ons.ctp.integration.common.product.model.Product.CaseType;
 import uk.gov.ons.ctp.integration.common.product.model.Product.Handler;
 import uk.gov.ons.ctp.integration.common.product.model.Product.ProductGroup;
+import uk.gov.ons.ctp.integration.common.product.model.Product.Region;
 
 /**
  * Runs the core tests against the test json as well as additional tests below
@@ -52,5 +53,19 @@ public class TestProductReferenceTest extends ProductReferenceTest {
     for (Product p : products) {
       assertTrue(p.getProductGroup().equals(ProductGroup.TRANSLATION));
     }
+  }
+
+  @Test
+  public void allWalesEngland() throws Exception {
+    Product example = new Product();
+    example.setRegions(Arrays.asList(Region.E, Region.W));
+    assertExpectedRegion(example);
+  }
+
+  @Test
+  public void allArabic() throws Exception {
+    Product example = new Product();
+    example.setLanguage("ara");
+    assertOnlyExpectedLanguage(example);
   }
 }

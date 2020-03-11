@@ -42,6 +42,7 @@ public class Product {
   }
 
   public enum ProductGroup {
+    EASY_READ,
     INVITE,
     QUESTIONNAIRE,
     CONTINUATION,

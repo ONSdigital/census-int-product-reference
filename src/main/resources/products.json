@@ -440,7 +440,7 @@
     "handler": "PRINT"
   },
   {
-    "description": "Household Unique Access Code for England",
+    "description": "Household Unique Access Code for England via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "HH",
@@ -465,7 +465,7 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Household Unique Access Code for Wales (in English)",
+    "description": "Household Unique Access Code for Wales (in English) via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "HH",
@@ -490,7 +490,7 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Household Unique Access Code for Wales (in Welsh)",
+    "description": "Household Unique Access Code for Wales (in Welsh) via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "HH",
@@ -515,7 +515,7 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Household Unique Access Code for Northern Ireland",
+    "description": "Household Unique Access Code for Northern Ireland via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "HH",
@@ -538,6 +538,56 @@
       "RH"
     ],
     "handler": "NOTIFY"
+  },
+  {
+    "description": "Household Unique Access Code for England via paper",
+    "productGroup": "UAC",
+    "caseTypes": [
+      "HH",
+      "SPG"
+    ],
+    "individual": false,
+    "regions": [
+      "E"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_UAC_UACHHP1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Household Unique Access Code for Northern Ireland via paper",
+    "productGroup": "UAC",
+    "caseTypes": [
+      "HH",
+      "SPG"
+    ],
+    "individual": false,
+    "regions": [
+      "N"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_UAC_UACHHP4",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
   },
   {
     "description": "Individual Questionnaire for England",
@@ -644,7 +694,111 @@
     "handler": "QM"
   },
   {
-    "description": "Individual Unique Access Code for England",
+    "description": "Individual Questionnaire (Large Print) for England",
+    "productGroup": "LARGE_PRINT",
+    "caseTypes": [
+      "CE",
+      "HH",
+      "SPG"
+    ],
+    "individual": true,
+    "regions": [
+      "E"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_LP_ILP1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Individual Questionnaire (Large Print) for Wales ( in English)",
+    "productGroup": "LARGE_PRINT",
+    "caseTypes": [
+      "CE",
+      "HH",
+      "SPG"
+    ],
+    "individual": true,
+    "regions": [
+      "W"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_LP_ILP2",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Individual Questionnaire (Large Print) for Wales ( in Welsh)",
+    "productGroup": "LARGE_PRINT",
+    "caseTypes": [
+      "CE",
+      "HH",
+      "SPG"
+    ],
+    "individual": true,
+    "regions": [
+      "W"
+    ],
+    "language": "wel",
+    "fulfilmentCode": "P_LP_ILP2W",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Individual Questionnaire (Large Print) for Northern Ireland",
+    "productGroup": "LARGE_PRINT",
+    "caseTypes": [
+      "CE",
+      "HH",
+      "SPG"
+    ],
+    "individual": true,
+    "regions": [
+      "N"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_LP_IL4",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Individual Unique Access Code for England via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "CE",
@@ -670,7 +824,7 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Individual Unique Access Code for Wales (in English)",
+    "description": "Individual Unique Access Code for Wales (in English) via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "CE",
@@ -696,7 +850,7 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Individual Unique Access Code for Wales (in Welsh)",
+    "description": "Individual Unique Access Code for Wales (in Welsh) via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "CE",
@@ -722,7 +876,7 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Individual Unique Access Code for Northern Ireland",
+    "description": "Individual Unique Access Code for Northern Ireland via SMS",
     "productGroup": "UAC",
     "caseTypes": [
       "CE",
@@ -748,15 +902,181 @@
     "handler": "NOTIFY"
   },
   {
-    "description": "Translation Booklet for England & Wales - Arabic",
+    "description": "Individual Unique Access Code for England via paper",
+    "productGroup": "UAC",
+    "caseTypes": [
+      "HH",
+      "SPG"
+    ],
+    "individual": true,
+    "regions": [
+      "E"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_UAC_UACIP1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Individual Unique Access Code for Northern Ireland via paper",
+    "productGroup": "UAC",
+    "caseTypes": [
+      "HH",
+      "SPG"
+    ],
+    "individual": true,
+    "regions": [
+      "N"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_UAC_UACIP4",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "FIELD",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Information leaflet (Easy Read) for England",
+    "productGroup": "EASY_READ",
+    "caseTypes": [
+      "CE",
+      "HH",
+      "SPG"
+    ],
+    "individual": false,
+    "regions": [
+      "E"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_ER_ILER1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Information leaflet (Easy Read) for Northern Ireland",
+    "productGroup": "EASY_READ",
+    "caseTypes": [
+      "CE",
+      "HH",
+      "SPG"
+    ],
+    "individual": false,
+    "regions": [
+      "N"
+    ],
+    "language": "eng",
+    "fulfilmentCode": "P_ER_ILER4",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Translation Booklet for England - Africaans",
     "productGroup": "TRANSLATION",
     "caseTypes": [
       "HH"
     ],
     "individual": false,
     "regions": [
-      "E",
-      "W"
+      "E"
+    ],
+    "language": "afr",
+    "fulfilmentCode": "P_TB_TBAFR1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Translation Booklet for England - Akan",
+    "productGroup": "TRANSLATION",
+    "caseTypes": [
+      "HH"
+    ],
+    "individual": false,
+    "regions": [
+      "E"
+    ],
+    "language": "aka",
+    "fulfilmentCode": "P_TB_TBAKA1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Translation Booklet for England - Albanian",
+    "productGroup": "TRANSLATION",
+    "caseTypes": [
+      "HH"
+    ],
+    "individual": false,
+    "regions": [
+      "E"
+    ],
+    "language": "alb",
+    "fulfilmentCode": "P_TB_TBALB1",
+    "initialContactCode": "",
+    "reminderContactCode": "",
+    "fieldDistributionCode": "",
+    "fieldQuestionnaireCode": "",
+    "deliveryChannel": "POST",
+    "requestChannels": [
+      "CC",
+      "RH"
+    ],
+    "handler": "PRINT"
+  },
+  {
+    "description": "Translation Booklet for England - Arabic",
+    "productGroup": "TRANSLATION",
+    "caseTypes": [
+      "HH"
+    ],
+    "individual": false,
+    "regions": [
+      "E"
     ],
     "language": "ara",
     "fulfilmentCode": "P_TB_TBARA1",
@@ -767,24 +1087,22 @@
     "deliveryChannel": "POST",
     "requestChannels": [
       "CC",
-      "FIELD",
       "RH"
     ],
     "handler": "PRINT"
   },
   {
-    "description": "Translation Booklet for England & Wales - Bengali",
+    "description": "Translation Booklet for Wales - Arabic",
     "productGroup": "TRANSLATION",
     "caseTypes": [
       "HH"
     ],
     "individual": false,
     "regions": [
-      "E",
       "W"
     ],
-    "language": "ben",
-    "fulfilmentCode": "P_TB_TBBEN1",
+    "language": "ara",
+    "fulfilmentCode": "P_TB_TBARA2",
     "initialContactCode": "",
     "reminderContactCode": "",
     "fieldDistributionCode": "",
@@ -792,38 +1110,12 @@
     "deliveryChannel": "POST",
     "requestChannels": [
       "CC",
-      "FIELD",
       "RH"
     ],
     "handler": "PRINT"
   },
   {
-    "description": "Translation Booklet for England & Wales - Cantonese",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "yue",
-    "fulfilmentCode": "P_TB_TBCAN1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for Northern Ireland - Cantonese",
+    "description": "Translation Booklet for Northern Ireland - Arabic",
     "productGroup": "TRANSLATION",
     "caseTypes": [
       "HH"
@@ -832,8 +1124,8 @@
     "regions": [
       "N"
     ],
-    "language": "yue",
-    "fulfilmentCode": "P_TB_TBCAN4",
+    "language": "ara",
+    "fulfilmentCode": "P_TB_TBARA4",
     "initialContactCode": "",
     "reminderContactCode": "",
     "fieldDistributionCode": "",
@@ -841,530 +1133,8 @@
     "deliveryChannel": "POST",
     "requestChannels": [
       "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - French",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "fre",
-    "fulfilmentCode": "P_TB_TBFRE1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Gujarati",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "guj",
-    "fulfilmentCode": "P_TB_TBGUJ1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Panjabi - Gurmukhi",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "pan",
-    "fulfilmentCode": "P_TB_TBGUR1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for Northern Ireland - Irish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "N"
-    ],
-    "language": "gle",
-    "fulfilmentCode": "P_TB_TBIRI4",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Italian",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "ita",
-    "fulfilmentCode": "P_TB_TBITA1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Kurdish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "kur",
-    "fulfilmentCode": "P_TB_TBKUR1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Lithuanian",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "lit",
-    "fulfilmentCode": "P_TB_TBLIT1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for Northern Ireland - Lithuanian",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "N"
-    ],
-    "language": "lit",
-    "fulfilmentCode": "T_PB_TBLIT4",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Mandarin Chinese",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "cmn",
-    "fulfilmentCode": "P_TB_TBMAN1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for Northern Ireland - Mandarin Chinese",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "N"
-    ],
-    "language": "cmn",
-    "fulfilmentCode": "P_TB_TBMAN4",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Polish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "pol",
-    "fulfilmentCode": "P_TB_TBPOL1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for Northern Ireland - Polish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "N"
-    ],
-    "language": "pol",
-    "fulfilmentCode": "P_TB_TBPOL4",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Portuguese",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "por",
-    "fulfilmentCode": "P_TB_TBPOR1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Russian",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "rus",
-    "fulfilmentCode": "P_TB_TBRUS1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Somali",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "som",
-    "fulfilmentCode": "P_TB_TBSOM1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Spanish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "spa",
-    "fulfilmentCode": "P_TB_TBSPA1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Turkish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "tur",
-    "fulfilmentCode": "P_TB_TBTUR1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for Northern Ireland - Ulster Scots",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "N"
-    ],
-    "language": "uls",
-    "fulfilmentCode": "P_TB_TBULS4",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Urdu",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "urd",
-    "fulfilmentCode": "P_TB_TBURD1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Vietnamese",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "vie",
-    "fulfilmentCode": "P_TB_TBVIE1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
-      "RH"
-    ],
-    "handler": "PRINT"
-  },
-  {
-    "description": "Translation Booklet for England & Wales - Yiddish",
-    "productGroup": "TRANSLATION",
-    "caseTypes": [
-      "HH"
-    ],
-    "individual": false,
-    "regions": [
-      "E",
-      "W"
-    ],
-    "language": "yid",
-    "fulfilmentCode": "P_TB_TBYSH1",
-    "initialContactCode": "",
-    "reminderContactCode": "",
-    "fieldDistributionCode": "",
-    "fieldQuestionnaireCode": "",
-    "deliveryChannel": "POST",
-    "requestChannels": [
-      "CC",
-      "FIELD",
       "RH"
     ],
     "handler": "PRINT"
   }
 ]
-

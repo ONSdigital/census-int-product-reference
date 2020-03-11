@@ -130,7 +130,7 @@ public abstract class ProductReferenceTest {
     assertOnlyExpectedIndividuality(example);
   }
 
-  private void assertOnlyExpectedIndividuality(Product example) throws Exception {
+  void assertOnlyExpectedIndividuality(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() > 0);
     for (Product p : products) {
@@ -138,7 +138,7 @@ public abstract class ProductReferenceTest {
     }
   }
 
-  private void assertOnlyExpectedCaseTypes(Product example) throws Exception {
+  void assertOnlyExpectedCaseTypes(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
     for (Product p : products) {
       assertTrue(p.getCaseTypes().containsAll(example.getCaseTypes()));
@@ -159,21 +159,7 @@ public abstract class ProductReferenceTest {
     assertExpectedRegion(example);
   }
 
-  @Test
-  public void allWalesEngland() throws Exception {
-    Product example = new Product();
-    example.setRegions(Arrays.asList(Region.E, Region.W));
-    assertExpectedRegion(example);
-  }
-
-  @Test
-  public void allPolish() throws Exception {
-    Product example = new Product();
-    example.setLanguage("pol");
-    assertOnlyExpectedLanguage(example);
-  }
-
-  private void assertOnlyExpectedLanguage(Product example) throws Exception {
+  void assertOnlyExpectedLanguage(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() > 0);
     for (Product p : products) {
@@ -188,7 +174,7 @@ public abstract class ProductReferenceTest {
     assertExpectedRegion(example);
   }
 
-  private void assertExpectedRegion(Product example) throws Exception {
+  void assertExpectedRegion(Product example) throws Exception {
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() > 0);
     for (Product p : products) {
@@ -199,10 +185,10 @@ public abstract class ProductReferenceTest {
   @Test
   public void justOneByCode() throws Exception {
     Product example = new Product();
-    example.setFulfilmentCode("P_TB_TBTUR1");
+    example.setFulfilmentCode("P_LP_HL4");
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() == 1);
-    assertTrue(products.get(0).getFulfilmentCode().equals("P_TB_TBTUR1"));
+    assertTrue(products.get(0).getFulfilmentCode().equals("P_LP_HL4"));
   }
 
   @Test
