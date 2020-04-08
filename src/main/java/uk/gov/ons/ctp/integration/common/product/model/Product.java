@@ -59,7 +59,6 @@ public class Product {
   private String fieldDistributionCode;
   private String fieldQuestionnaireCode;
   private String description;
-  private String language;
   private List<CaseType> caseTypes;
   private Boolean individual;
   private List<Region> regions;

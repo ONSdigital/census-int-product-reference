@@ -4,12 +4,12 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.godaddy.logging.Logger;
-import com.godaddy.logging.LoggerFactory;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,8 +25,6 @@ import uk.gov.ons.ctp.integration.common.product.model.Product.RequestChannel;
 
 @Component
 public class ProductReference {
-
-  private static final Logger log = LoggerFactory.getLogger(ProductReference.class);
 
   @Value("${productsJsonPath:classpath:/products.json}")
   Resource productFile;
@@ -48,8 +46,15 @@ public class ProductReference {
               .values();
 
       if (products.size() != uniqueByFulfilmentCode.size()) {
+        Set<String> allItems = new HashSet<>();
+        Set<String> dupes =
+            products
+                .stream()
+                .filter(p -> !allItems.add(p.getFulfilmentCode()))
+                .map(p -> p.getFulfilmentCode())
+                .collect(Collectors.toSet());
         throw new CTPException(
-            Fault.SYSTEM_ERROR, "Product data set not unique by fulfilment code");
+            Fault.SYSTEM_ERROR, "Product data set not unique by fulfilment code : " + dupes);
       }
 
       // the JSON could contain null list items
@@ -96,9 +101,6 @@ public class ProductReference {
                     && (example.getIndividual() == null
                         ? true
                         : p.getIndividual().equals(example.getIndividual()))
-                    && (example.getLanguage() == null
-                        ? true
-                        : p.getLanguage().equals(example.getLanguage()))
                     && (example.getFulfilmentCode() == null
                         ? true
                         : p.getFulfilmentCode().equals(example.getFulfilmentCode()))

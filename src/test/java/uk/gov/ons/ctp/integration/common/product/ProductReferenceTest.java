@@ -159,14 +159,6 @@ public abstract class ProductReferenceTest {
     assertExpectedRegion(example);
   }
 
-  void assertOnlyExpectedLanguage(Product example) throws Exception {
-    List<Product> products = productReference.searchProducts(example);
-    assertTrue(products.size() > 0);
-    for (Product p : products) {
-      assertTrue(p.getLanguage().equals(example.getLanguage()));
-    }
-  }
-
   @Test
   public void allNIreland() throws Exception {
     Product example = new Product();

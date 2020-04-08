@@ -61,11 +61,4 @@ public class TestProductReferenceTest extends ProductReferenceTest {
     example.setRegions(Arrays.asList(Region.E, Region.W));
     assertExpectedRegion(example);
   }
-
-  @Test
-  public void allArabic() throws Exception {
-    Product example = new Product();
-    example.setLanguage("ara");
-    assertOnlyExpectedLanguage(example);
-  }
 }
