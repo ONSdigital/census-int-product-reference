@@ -104,15 +104,6 @@ public class ProductReference {
                     && (example.getFulfilmentCode() == null
                         ? true
                         : p.getFulfilmentCode().equals(example.getFulfilmentCode()))
-                    && (example.getInitialContactCode() == null
-                        ? true
-                        : p.getInitialContactCode().equals(example.getInitialContactCode()))
-                    && (example.getReminderContactCode() == null
-                        ? true
-                        : p.getReminderContactCode().equals(example.getReminderContactCode()))
-                    && (example.getFieldDistributionCode() == null
-                        ? true
-                        : p.getFieldDistributionCode().equals(example.getFieldDistributionCode()))
                     && (example.getFieldQuestionnaireCode() == null
                         ? true
                         : p.getFieldQuestionnaireCode().equals(example.getFieldQuestionnaireCode()))
