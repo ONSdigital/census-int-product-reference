@@ -54,9 +54,6 @@ public class Product {
   // NOTE : fulfilementCode must be unique within the Product data set
   private String fulfilmentCode;
   private ProductGroup productGroup;
-  private String initialContactCode;
-  private String reminderContactCode;
-  private String fieldDistributionCode;
   private String fieldQuestionnaireCode;
   private String description;
   private List<CaseType> caseTypes;
