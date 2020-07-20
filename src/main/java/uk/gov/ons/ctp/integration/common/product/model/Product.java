@@ -15,7 +15,8 @@ public class Product {
   public enum RequestChannel {
     CC,
     FIELD,
-    RH
+    RH,
+    EQ
   }
 
   public enum DeliveryChannel {

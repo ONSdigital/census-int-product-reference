@@ -25,7 +25,7 @@ public class MainProductReferenceTest extends ProductReferenceTest {
   public void totalProductsCheck() throws Exception {
     Product example = new Product();
     List<Product> products = productReference.searchProducts(example);
-    assertEquals(121, products.size());
+    assertEquals(129, products.size());
   }
 
   @Test
@@ -36,6 +36,6 @@ public class MainProductReferenceTest extends ProductReferenceTest {
     example.setIndividual(true);
 
     List<Product> products = productReference.searchProducts(example);
-    assertEquals(4, products.size());
+    assertEquals(5, products.size());
   }
 }
