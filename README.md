@@ -10,14 +10,11 @@ and returns a list of product objects, encapsulating :
 *  individual
 *  regions []
 *  language
-*  initialContactCode
-*  reminderContactCode
-*  fieldDistributionCode
-*  fieldQuestionnaireCode
 *  fulfilmentCode
 *  deliveryChannel
 *  requestChannels []
 *  handler
+*  productGroup
 
 Note that the valid caseTypes are one of [HH | CE | SPG] - HI is invalid in the product reference, see 'individual'.
 
