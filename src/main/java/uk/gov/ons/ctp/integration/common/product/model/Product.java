@@ -52,10 +52,15 @@ public class Product {
     TRANSLATION
   }
 
+  public enum Language {
+    E,
+    W,
+    B
+  }
+
   // NOTE : fulfilementCode must be unique within the Product data set
   private String fulfilmentCode;
   private ProductGroup productGroup;
-  private String fieldQuestionnaireCode;
   private String description;
   private List<CaseType> caseTypes;
   private Boolean individual;
@@ -63,4 +68,5 @@ public class Product {
   private DeliveryChannel deliveryChannel;
   private List<RequestChannel> requestChannels;
   private Handler handler;
+  private Language language;
 }
