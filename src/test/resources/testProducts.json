@@ -3,97 +3,97 @@
    "description": "Individual Questionnaire for England",
    "productGroup": "QUESTIONNAIRE",
    "fulfilmentCode": "P_OR_I1",
-   "fieldQuestionnaireCode": "I1",
    "caseTypes": ["HH"],
    "individual": true,
    "regions": ["E"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC", "FIELD"],
-   "handler": "QM"
+   "handler": "QM",
+   "language": "E"
  },
  {
    "description": "Translation Booklet for England & Wales - Polish",
    "productGroup": "TRANSLATION",
    "fulfilmentCode": "P_TB_TBPOL1",
-   "fieldQuestionnaireCode": "",
    "caseTypes": ["HH"],
    "individual": false,
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
    "requestChannels": [],
-   "handler": "PRINT"
+   "handler": "PRINT",
+   "language": "W"
  },
  {
    "description": "Household Letter for England - Group 1",
    "productGroup": "INVITE",
    "fulfilmentCode": "P_RL_1RL1_1",
-   "fieldQuestionnaireCode": "",
    "caseTypes": ["HH"],
    "individual": false,
    "regions": ["E"],
    "deliveryChannel": "POST",
    "requestChannels": [],
-   "handler": "PRINT"
+   "handler": "PRINT",
+   "language": "B"
  },
  {
    "description": "Household Questionnaire for England",
    "productGroup": "QUESTIONNAIRE",
    "fulfilmentCode": "P_OR_H1",
-   "fieldQuestionnaireCode": "H1",
    "caseTypes": ["HH"],
    "individual": false,
    "regions": ["E"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC", "FIELD"],
-   "handler": "QM"
+   "handler": "QM",
+   "language": "W"
  },
  {
    "description": "Translation Booklet for England & Wales - Turkish",
    "productGroup": "TRANSLATION",
    "fulfilmentCode": "P_TB_TBTUR1",
-   "fieldQuestionnaireCode": "",
    "caseTypes": ["HH"],
    "individual": false,
    "regions": ["E", "W"],
    "deliveryChannel": "POST",
    "requestChannels": ["CC"],
-   "handler": "PRINT"
+   "handler": "PRINT",
+   "language": "B"
  },
  {
    "description": "Household Questionnaire (Large Print) for Northern Ireland (in English)",
    "productGroup": "LARGE_PRINT",
    "fulfilmentCode": "P_LP_HL4",
-   "fieldQuestionnaireCode": "",
    "caseTypes": ["HH"],
    "individual": false,
    "regions": ["N"],
    "deliveryChannel": "POST",
    "requestChannels": [],
-   "handler": "PRINT"
+   "handler": "PRINT",
+   "language": "B"
  },
  {
    "description": "Household Unique Access Code for England",
    "productGroup": "UAC",
    "fulfilmentCode": "UACHHT1",
-   "fieldQuestionnaireCode": "HUAC1",
    "caseTypes": ["HH"],
    "individual": false,
    "regions": ["E"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD", "RH"],
-   "handler": "NOTIFY"
+   "handler": "NOTIFY",
+   "language": "W"
  },
  {
    "description": "A product that has two casetypes",
    "productGroup": "QUESTIONNAIRE",
    "fulfilmentCode": "2CASETYPES",
-   "fieldQuestionnaireCode": "HUAC1",
    "caseTypes": ["HH","CE"],
    "individual": false,
    "regions": ["E"],
    "deliveryChannel": "SMS",
    "requestChannels": ["CC", "FIELD", "RH"],
-   "handler": "NOTIFY"
+   "handler": "NOTIFY",
+   "language": "B"
  }
 ]
 

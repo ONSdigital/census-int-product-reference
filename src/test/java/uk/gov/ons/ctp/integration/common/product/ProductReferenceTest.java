@@ -69,13 +69,13 @@ public abstract class ProductReferenceTest {
   }
 
   @Test
-  public void onlyFieldQuestionnaireCodeH1() throws Exception {
+  public void onlyFieldLanguageE() throws Exception {
     Product example = new Product();
-    example.setFieldQuestionnaireCode("H1");
+    example.setLanguage(Product.Language.E);
     List<Product> products = productReference.searchProducts(example);
     assertTrue(products.size() > 0);
     for (Product p : products) {
-      assertTrue(p.getFieldQuestionnaireCode().equals("H1"));
+      assertTrue(p.getLanguage().equals(Product.Language.E));
     }
   }
 

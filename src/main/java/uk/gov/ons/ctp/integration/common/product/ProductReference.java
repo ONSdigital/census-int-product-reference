@@ -104,9 +104,9 @@ public class ProductReference {
                     && (example.getFulfilmentCode() == null
                         ? true
                         : p.getFulfilmentCode().equals(example.getFulfilmentCode()))
-                    && (example.getFieldQuestionnaireCode() == null
+                    && (example.getLanguage() == null
                         ? true
-                        : p.getFieldQuestionnaireCode().equals(example.getFieldQuestionnaireCode()))
+                        : p.getLanguage().equals(example.getLanguage()))
                     && (example.getDeliveryChannel() == null
                         ? true
                         : p.getDeliveryChannel().equals(example.getDeliveryChannel()))
