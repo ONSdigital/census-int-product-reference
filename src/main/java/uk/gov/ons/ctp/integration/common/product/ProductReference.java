@@ -40,16 +40,14 @@ public class ProductReference {
               productFile.getInputStream(), new TypeReference<List<Product>>() {});
 
       Collection<Product> uniqueByFulfilmentCode =
-          products
-              .stream()
+          products.stream()
               .collect(Collectors.toMap(Product::getFulfilmentCode, p -> p, (p, q) -> p))
               .values();
 
       if (products.size() != uniqueByFulfilmentCode.size()) {
         Set<String> allItems = new HashSet<>();
         Set<String> dupes =
-            products
-                .stream()
+            products.stream()
                 .filter(p -> !allItems.add(p.getFulfilmentCode()))
                 .map(p -> p.getFulfilmentCode())
                 .collect(Collectors.toSet());
@@ -60,16 +58,13 @@ public class ProductReference {
       // the JSON could contain null list items
       // rather than over complicate the searchProducts filter
       // replace null lists with empty lists
-      products
-          .stream()
+      products.stream()
           .filter(p -> p.getRequestChannels() == null)
           .forEach(p -> p.setRequestChannels(new ArrayList<RequestChannel>()));
-      products
-          .stream()
+      products.stream()
           .filter(p -> p.getRegions() == null)
           .forEach(p -> p.setRegions(new ArrayList<Region>()));
-      products
-          .stream()
+      products.stream()
           .filter(p -> p.getCaseTypes() == null)
           .forEach(p -> p.setCaseTypes(new ArrayList<CaseType>()));
 
@@ -85,8 +80,7 @@ public class ProductReference {
 
   @Cacheable("productCache")
   public List<Product> searchProducts(Product example) throws CTPException {
-    return products
-        .stream()
+    return products.stream()
         .filter(
             p ->
                 (example.getCaseTypes() == null
